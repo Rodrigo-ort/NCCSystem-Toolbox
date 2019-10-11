@@ -1,7 +1,7 @@
 % Statistics of time-frequency analysis
 % Run after timeFrequencyAnalysis3.m
 % PhD student - Fabio Henrique (oliveirafhm@gmail.com) - 01/02/2019
-% Last modification: 22/08/2019
+% Last modification: 05/10/2019
 % To be used in final paper of 06/2019
 
 %% Load XLS file with frequency data (features)
@@ -314,6 +314,17 @@ for t = 1:length(tasks)
         save(fullPath);
     end
 end
+
+%% Statistical test for age (data from DadosColetas sheet)
+% TODO: Improve to pick data directly from .xlsx
+h_age = [62;53;48;76;75;71;48;57;48;60;65;55;69;54;54;73;71;67;62;66;63;58;61;48;61;60;54;NaN;NaN;NaN];
+pd_age = [63;54;47;76;74;70;48;56;48;60;64;55;69;53;50;73;72;67;62;66;62;78;56;61;49;62;60;72;55;82];
+
+kstest(h_age)
+kstest(pd_age)
+
+% if 1 for the two kstests, sample is non-normal
+[p,h] = ranksum(h_age,pd_age)
 
 %% Next: clusterAnalysis.m
 % clear all;
