@@ -6,7 +6,7 @@ Non-contact capacitive system for movement analysis
 * Adriano O Andrade (adriano@ufu.br)
 
 ## List of publications
-1. F. H. M. Oliveira, A. R. P. Machado, and A. O. Andrade, “Hand motion quantification using non-contact capacitive sensors,” in Anais do XXV Congresso Brasileiro de Engenharia Biomédica, 2016.
+1. F. H. M. Oliveira, A. R. P. Machado, and A. O. Andrade, “Hand motion quantification using non-contact capacitive sensors,” in Anais do XXV Congresso Brasileiro de Engenharia Biomédica, 2016. Presented poster: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3569511.svg)](https://doi.org/10.5281/zenodo.3569511)
 
 1. F. H. M. Oliveira, T. F. Zaruz, M. F. Vieira, and A. O. Andrade, “t-SNE Applied to Discriminate Healthy Individuals from Those with Parkinson’s Disease Executing Motor Tasks Detected by Non-contact Capacitive Sensors,” in IFMBE Proceedings, vol. 68, no. 1, 2019, pp. 421–425. - Presentation slides: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3541736.svg)](https://doi.org/10.5281/zenodo.3541736)
 
