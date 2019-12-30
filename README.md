@@ -1,5 +1,5 @@
 # NCC System
-Non-contact capacitive system for movement analysis
+Non-contact capacitive system for movement analysis.
 
 ## Authors
 * Fábio Henrique M Oliveira (oliveirafhm@gmail.com)
