@@ -1,5 +1,5 @@
-# NCC System
-Non-contact capacitive system for movement analysis.
+# NCC System Toolbox
+Non-contact capacitive toolbox for movement analysis.
 
 #### Hardware - Patent pending number [BR 10 2018 069864 8](https://gru.inpi.gov.br/pePI/servlet/PatenteServletController?Action=detail&CodPedido=1488823&SearchParameter=BR%2010%202018%20069864%208%20%20%20%20%20%20&Resumo=&Titulo=)
 
