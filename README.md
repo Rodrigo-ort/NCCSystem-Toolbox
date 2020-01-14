@@ -1,11 +1,11 @@
 # NCC System
 Non-contact capacitive system for movement analysis.
 
-#### Patent pending number [BR 10 2018 069864 8](https://gru.inpi.gov.br/pePI/servlet/PatenteServletController?Action=detail&CodPedido=1488823&SearchParameter=BR%2010%202018%20069864%208%20%20%20%20%20%20&Resumo=&Titulo=)
+#### Hardware - Patent pending number [BR 10 2018 069864 8](https://gru.inpi.gov.br/pePI/servlet/PatenteServletController?Action=detail&CodPedido=1488823&SearchParameter=BR%2010%202018%20069864%208%20%20%20%20%20%20&Resumo=&Titulo=)
 
 ## Authors
 * Fábio Henrique M Oliveira (oliveirafhm@gmail.com)
-* Adriano O Andrade (adriano@ufu.br)
+* Adriano O Andrade (adriano@ufu.br) - Advisor
 
 ## List of publications
 1. F. H. M. Oliveira, A. R. P. Machado, and A. O. Andrade, “Hand motion quantification using non-contact capacitive sensors,” in Anais do XXV Congresso Brasileiro de Engenharia Biomédica, 2016. Presented poster: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3569511.svg)](https://doi.org/10.5281/zenodo.3569511)
