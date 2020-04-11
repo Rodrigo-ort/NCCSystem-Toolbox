@@ -25,6 +25,9 @@ sDataModel = sortrows(dataModel, 3);
 %% Shows all data
 figure;
 gscatter(sDataModel.x1, sDataModel.y2, sDataModel.setup);
+title('Real samples (used to build the model)');
+ylabel('Amplitude range (V)');
+xlabel('Displacement (mm)');
 
 %% Boxplot of data
 figure;
@@ -57,17 +60,17 @@ disp(lme2);
 %% Compare models
 results = compare(lme0,lme1,'CheckNesting',true);
 if results.pValue < 0.05
-    disp('The second model is significantly better than the first one.\n> lme1 <');
+    disp('The second model is significantly better than the first one. > lme1 <');
 else
-    disp('The second model is not significantly better than the first one.\n> lme0 <');
+    disp('The second model is not significantly better than the first one. > lme0 <');
 end
 
 % The p-value of 1 indicates that lme2 is a worse fit than lme1.
 results = compare(lme1,lme2,'CheckNesting',true);
 if results.pValue < 0.05
-    disp('The second model is significantly better than the first one.\n> lme2 <');
+    disp('The second model is significantly better than the first one. > lme2 <');
 else
-    disp('The second model is not significantly better than the first one.\n> lme1 <');
+    disp('The second model is not significantly better than the first one. > lme1 <');
 end
 % Choosen model to proceed with the analysis
 bestLme = lme1;
@@ -172,7 +175,7 @@ legend('Upper and lower CI','Estimated behavior', 'Location','best');
 % set(gca,'xlim',[0 10]);
 % set(gca,'XTickLabel',x2); 
 grid on;
-
+hold on;
 % Place equation in upper left of graph.
 xl = xlim;
 yl = ylim;
@@ -180,6 +183,9 @@ xt = 0.05 * (xl(2)-xl(1)) + xl(1);
 yt = 0.90 * (yl(2)-yl(1)) + yl(1);
 caption = sprintf('y = %f * x + %f',slopeCoeff, interceptCoeff);
 text(xt, yt, caption, 'FontSize', 12, 'Color', 'r', 'FontWeight', 'bold');
+hold on;
+% Plot real data
+gscatter(sDataModel.x1,sDataModel.y2);
 
 %% ANOVA and squared R
 stats = anova(bestLme)
