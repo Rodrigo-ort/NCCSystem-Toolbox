@@ -18,4 +18,4 @@ Non-contact capacitive toolbox for movement analysis.
 
 1. F. H. M. Oliveira, A. G. Rabelo, L. M. D. Luiz, A. A. Pereira, F. Marcus, and A. O. Andrade, “On the Use of Non-Contact Capacitive Sensors for the Assessment of Postural Hand Tremor of Individuals with Parkinson ’ s Disease,” in 2019 41st International Engineering in Medicine and Biology Conference, 2019, pp. 6591–6594. - Presentation slides: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3510207.svg)](https://doi.org/10.5281/zenodo.3510207)
 
-1. Oliveira F (2020) Objective assessment of motor symptoms of Parkinson’s disease through non-contact sensors. Universidade Federal de Uberlândia. Presentation slides: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3749399.svg)](https://doi.org/10.5281/zenodo.3749399)
+1. Oliveira F (2020) Objective assessment of motor symptoms of Parkinson’s disease through non-contact sensors. Universidade Federal de Uberlândia. - Presentation slides: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3749399.svg)](https://doi.org/10.5281/zenodo.3749399)
