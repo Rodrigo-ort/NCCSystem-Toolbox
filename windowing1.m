@@ -82,7 +82,8 @@ linkaxes(h2,'x');
 % commandwindow;
 % chosenOnset = input('\nType the known onset: ');%3;
 chosenOnset = 3;
-[xOnset, yOnset] = getpts(fig1);
+% [xOnset, yOnset] = getpts(fig1);
+[xOnset, yOnset] = ginput(1);
 plesseyTimeOnsets = ones(size(timeOnsets))*-1;
 plesseyTimeOnsets(chosenOnset) = xOnset;
 i = chosenOnset;
@@ -153,6 +154,22 @@ windowsFiltered = ps1WindowsFiltered; %test
 % Value to be used in the sync process with other hardware
 initTimeTrash = ps1EnvTime(ps1SelectedWindows(1)-1); % In seconds
 
+
+% Nova função SmoothFilter utilizando smoothdata
+function y1 = SmoothFilter(x, y, maSpan, plotFlag, titleStr, cutoff)
+    y1 = smoothdata(y, 'movmean', maSpan);
+    if plotFlag
+        figure;
+        plot(x, y, '-r');
+        hold on;
+        plot(x, y1, '-b');
+        title(titleStr);
+        legend('Original Signal', 'Smoothed Signal');
+        xlabel('Time');
+        ylabel('Amplitude');
+        grid on;
+    end
+end
 %% Signal filtering (remove offset and signal trash) - Plessey signal
 plotFlag = 1;
 % Cut-off frequency in Hz (used to estimate smooth parameters)
@@ -220,7 +237,7 @@ xlabel('Time (s)','FontSize',16);
 linkaxes(h3,'x');
 
 %% Delete signal trash from selected sensor/axis of tremsen
-[tsXOnset, tsYOnset] = getpts(fig2);
+[tsXOnset, tsYOnset] = ginput(1);
 
 pulseFlag = tsXOnset;
 tLag = pulseFlag + initTimeTrash;
