@@ -26,7 +26,10 @@ filePath = strcat(pathName, fileName);
 % commandwindow;
 startRow = 3;%input('Type signal start row: '); % NCC hardware 1.1 and newer: row 3
 try
-    data = csvread(filePath, startRow, 0);
+    opts = detectImportOptions(filePath);
+    opts.DataLines = [startRow Inf];
+    data = readtable(filePath, opts);
+    % data = csvread(filePath, startRow, 0);
     lData = length(data);
 catch
     % Section for when overruns happen
